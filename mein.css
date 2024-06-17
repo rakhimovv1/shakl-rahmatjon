@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    align-items: center;
+}
+.box1{
+    width: 200px;
+    height: 200px;
+    background-color: dodgerblue;
+    animation-name: bir;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.box2{
+    width: 200px;
+    height: 200px;
+    background-color: gold;
+    border-radius: 50%;
+    animation-name: ikki;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.box3{
+    width: 150px;
+    height: 300px;
+    background-color: green;
+    animation-name: uch;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.box4{
+    width: 150px;
+    height: 300px;
+    background-color: brown;
+    animation-name: tor;
+    animation-duration: 3s;
+    /* animation-delay: 2s; */
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes bir {
+    0%{
+        transform: rotate(360deg);
+    }
+    50%{
+        transform: rotate(3600deg);
+    }
+    100%{
+        transform: rotate(36000deg);
+    }
+}
+/* @keyframes ikki {
+    0%{
+        width: 100px;
+        height: 100px;
+    }
+    100%{
+        width: 200px;
+        height: 200px;
+    }
+} */
+@keyframes ikki {
+    0% {
+      transform: scale(0.6);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0.6);
+    }
+  }
+@keyframes uch {
+    0%{
+        background-color: green;
+    }
+    100%{
+        background-color: aqua;
+    }
+}
+@keyframes tor {
+    0% {
+      transform: skew(30deg);
+    }
+    50% {
+        transform: skew(-30deg);
+    }
+    100% {
+        transform: skew(30deg);
+    }
+  }
